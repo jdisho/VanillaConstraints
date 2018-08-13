@@ -10,12 +10,12 @@ import Foundation
 import UIKit
 
 extension UIView: Constrainable {
-    public var parentView: UIView {
+    internal var parentView: UIView {
         guard let parent = superview else { fatalError("The view has no superview") }
         return parent
     }
 
-    var childView: UIView {
+    internal var childView: UIView {
         return self
     }
 }
