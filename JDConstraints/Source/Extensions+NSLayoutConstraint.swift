@@ -1,0 +1,30 @@
+//
+//  Extensions+NSLayoutConstraint.swift
+//  JDConstraints
+//
+//  Created by Joan Disho on 13.08.18.
+//  Copyright © 2018 Joan Disho. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+extension NSLayoutConstraint {
+    internal func priority(_ priority: UILayoutPriority) -> Self {
+        self.priority = priority
+        return self
+    }
+
+    internal func offset(_ offset: CGFloat) -> Self {
+        constant = offset
+        return self
+    }
+
+    internal func activate() {
+        isActive = true
+    }
+
+    internal func deactivate() {
+        isActive = false
+    }
+}

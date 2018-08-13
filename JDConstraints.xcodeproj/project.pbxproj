@@ -13,6 +13,11 @@
 		C056F1122121A260007B6791 /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1112121A260007B6791 /* Constrainable.swift */; };
 		C056F1142121A337007B6791 /* UIView+Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1132121A337007B6791 /* UIView+Constrainable.swift */; };
 		C056F1182121A3D3007B6791 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1172121A3D3007B6791 /* ConstraintRelation.swift */; };
+		C056F11A2121A4B4007B6791 /* JDConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1192121A4B4007B6791 /* JDConstraints.swift */; };
+		C056F11C2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F11B2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift */; };
+		C056F11F2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F11E2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift */; };
+		C056F1212121A553007B6791 /* Extensions+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1202121A553007B6791 /* Extensions+NSLayoutConstraint.swift */; };
+		C056F1232121A5B4007B6791 /* Extensions+NSLayoutDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1222121A5B4007B6791 /* Extensions+NSLayoutDimension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,11 @@
 		C056F1112121A260007B6791 /* Constrainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constrainable.swift; sourceTree = "<group>"; };
 		C056F1132121A337007B6791 /* UIView+Constrainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constrainable.swift"; sourceTree = "<group>"; };
 		C056F1172121A3D3007B6791 /* ConstraintRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		C056F1192121A4B4007B6791 /* JDConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDConstraints.swift; sourceTree = "<group>"; };
+		C056F11B2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutXAxisAnchor.swift"; sourceTree = "<group>"; };
+		C056F11E2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutYAxisAnchor.swift"; sourceTree = "<group>"; };
+		C056F1202121A553007B6791 /* Extensions+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		C056F1222121A5B4007B6791 /* Extensions+NSLayoutDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutDimension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,11 @@
 				C056F1112121A260007B6791 /* Constrainable.swift */,
 				C056F1172121A3D3007B6791 /* ConstraintRelation.swift */,
 				C056F1132121A337007B6791 /* UIView+Constrainable.swift */,
+				C056F1192121A4B4007B6791 /* JDConstraints.swift */,
+				C056F11B2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift */,
+				C056F11E2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift */,
+				C056F1202121A553007B6791 /* Extensions+NSLayoutConstraint.swift */,
+				C056F1222121A5B4007B6791 /* Extensions+NSLayoutDimension.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -212,8 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C056F11A2121A4B4007B6791 /* JDConstraints.swift in Sources */,
+				C056F1232121A5B4007B6791 /* Extensions+NSLayoutDimension.swift in Sources */,
+				C056F11C2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift in Sources */,
+				C056F1212121A553007B6791 /* Extensions+NSLayoutConstraint.swift in Sources */,
 				C056F1142121A337007B6791 /* UIView+Constrainable.swift in Sources */,
 				C056F1182121A3D3007B6791 /* ConstraintRelation.swift in Sources */,
+				C056F11F2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift in Sources */,
 				C056F1122121A260007B6791 /* Constrainable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
