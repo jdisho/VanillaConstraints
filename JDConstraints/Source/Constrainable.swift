@@ -13,14 +13,3 @@ protocol Constrainable: class {
     var parentView: UIView { get }
     var childView: UIView { get }
 }
-
-extension UIView: Constrainable {
-    public var parentView: UIView {
-        guard let parent = superview else { fatalError("The view has no superview") }
-        return parent
-    }
-
-    var childView: UIView {
-        return self
-    }
-}
