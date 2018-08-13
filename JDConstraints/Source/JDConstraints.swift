@@ -12,7 +12,7 @@ import UIKit
 extension Constrainable {
 
     @discardableResult
-    func add(to parentView: UIView) -> Self {
+    public func add(to parentView: UIView) -> Self {
         childView.translatesAutoresizingMaskIntoConstraints = false
         parentView.addSubview(childView)
 
@@ -20,7 +20,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func top<YAxis>(
+    public func top<YAxis>(
         to anchor: KeyPath<UIView, YAxis>,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
@@ -36,7 +36,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func bottom<YAxis>(
+    public func bottom<YAxis>(
         to anchor: KeyPath<UIView, YAxis>,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
@@ -52,7 +52,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func left<XAxis>(
+    public func left<XAxis>(
         to anchor: KeyPath<UIView, XAxis>,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
@@ -68,7 +68,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func right<XAxis>(
+    public func right<XAxis>(
         to anchor: KeyPath<UIView, XAxis>,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
@@ -84,7 +84,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func leading<XAxis>(
+    public func leading<XAxis>(
         to anchor: KeyPath<UIView, XAxis>,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
@@ -100,7 +100,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func trailing<XAxis>(
+    public func trailing<XAxis>(
         to anchor: KeyPath<UIView, XAxis>,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
@@ -117,7 +117,7 @@ extension Constrainable {
 
 
     @discardableResult
-    func centerY<YAxis>(
+    public func centerY<YAxis>(
         to anchor: KeyPath<UIView, YAxis>,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
@@ -133,7 +133,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func centerX<XAxis>(
+    public func centerX<XAxis>(
         to anchor: KeyPath<UIView, XAxis>,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
@@ -149,7 +149,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func height<YAxis>(
+    public func height<YAxis>(
         to dimension: KeyPath<UIView, YAxis>,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
@@ -165,7 +165,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func width<XAxis>(
+    public func width<XAxis>(
         to dimension: KeyPath<UIView, XAxis>,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
@@ -181,7 +181,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func width(
+    public func width(
         _ constant: CGFloat,
         relation: ConstraintRelation = .equal,
         priority: UILayoutPriority = .required
@@ -195,7 +195,7 @@ extension Constrainable {
     }
 
     @discardableResult
-    func height(
+    public func height(
         _ constant: CGFloat,
         relation: ConstraintRelation = .equal,
         priority: UILayoutPriority = .required

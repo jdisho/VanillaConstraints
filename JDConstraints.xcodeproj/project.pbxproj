@@ -18,6 +18,7 @@
 		C056F11F2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F11E2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift */; };
 		C056F1212121A553007B6791 /* Extensions+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1202121A553007B6791 /* Extensions+NSLayoutConstraint.swift */; };
 		C056F1232121A5B4007B6791 /* Extensions+NSLayoutDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1222121A5B4007B6791 /* Extensions+NSLayoutDimension.swift */; };
+		C056F1262121A695007B6791 /* Extensions+JDConstrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1252121A695007B6791 /* Extensions+JDConstrainable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C056F11E2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutYAxisAnchor.swift"; sourceTree = "<group>"; };
 		C056F1202121A553007B6791 /* Extensions+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
 		C056F1222121A5B4007B6791 /* Extensions+NSLayoutDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutDimension.swift"; sourceTree = "<group>"; };
+		C056F1252121A695007B6791 /* Extensions+JDConstrainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+JDConstrainable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				C056F11E2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift */,
 				C056F1202121A553007B6791 /* Extensions+NSLayoutConstraint.swift */,
 				C056F1222121A5B4007B6791 /* Extensions+NSLayoutDimension.swift */,
+				C056F1252121A695007B6791 /* Extensions+JDConstrainable.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			files = (
 				C056F11A2121A4B4007B6791 /* JDConstraints.swift in Sources */,
 				C056F1232121A5B4007B6791 /* Extensions+NSLayoutDimension.swift in Sources */,
+				C056F1262121A695007B6791 /* Extensions+JDConstrainable.swift in Sources */,
 				C056F11C2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift in Sources */,
 				C056F1212121A553007B6791 /* Extensions+NSLayoutConstraint.swift in Sources */,
 				C056F1142121A337007B6791 /* UIView+Constrainable.swift in Sources */,
