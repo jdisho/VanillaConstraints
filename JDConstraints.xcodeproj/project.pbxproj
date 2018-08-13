@@ -12,6 +12,7 @@
 		C056F1072121A1AD007B6791 /* JDConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = C056F0F92121A1AD007B6791 /* JDConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C056F1122121A260007B6791 /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1112121A260007B6791 /* Constrainable.swift */; };
 		C056F1142121A337007B6791 /* UIView+Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1132121A337007B6791 /* UIView+Constrainable.swift */; };
+		C056F1182121A3D3007B6791 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1172121A3D3007B6791 /* ConstraintRelation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		C056F1062121A1AD007B6791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C056F1112121A260007B6791 /* Constrainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constrainable.swift; sourceTree = "<group>"; };
 		C056F1132121A337007B6791 /* UIView+Constrainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constrainable.swift"; sourceTree = "<group>"; };
+		C056F1172121A3D3007B6791 /* ConstraintRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				C056F1112121A260007B6791 /* Constrainable.swift */,
+				C056F1172121A3D3007B6791 /* ConstraintRelation.swift */,
 				C056F1132121A337007B6791 /* UIView+Constrainable.swift */,
 			);
 			path = Source;
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C056F1142121A337007B6791 /* UIView+Constrainable.swift in Sources */,
+				C056F1182121A3D3007B6791 /* ConstraintRelation.swift in Sources */,
 				C056F1122121A260007B6791 /* Constrainable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
