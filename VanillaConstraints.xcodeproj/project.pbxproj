@@ -10,7 +10,6 @@
 		C03988602125AF5100FFDA7D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C056F0FA2121A1AD007B6791 /* Info.plist */; };
 		C056F1002121A1AD007B6791 /* VanillaConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C056F0F62121A1AD007B6791 /* VanillaConstraints.framework */; };
 		C056F1052121A1AD007B6791 /* VanillaConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1042121A1AD007B6791 /* VanillaConstraintsTests.swift */; };
-		C056F1072121A1AD007B6791 /* VanillaConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = C056F0F92121A1AD007B6791 /* VanillaConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C056F1122121A260007B6791 /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1112121A260007B6791 /* Constrainable.swift */; };
 		C056F1142121A337007B6791 /* UIView+Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1132121A337007B6791 /* UIView+Constrainable.swift */; };
 		C056F1182121A3D3007B6791 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1172121A3D3007B6791 /* ConstraintRelation.swift */; };
@@ -34,7 +33,6 @@
 
 /* Begin PBXFileReference section */
 		C056F0F62121A1AD007B6791 /* VanillaConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VanillaConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C056F0F92121A1AD007B6791 /* VanillaConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VanillaConstraints.h; sourceTree = "<group>"; };
 		C056F0FA2121A1AD007B6791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/jodi/Documents/Swift/JDConstraints/VanillaConstraints/Info.plist; sourceTree = "<absolute>"; };
 		C056F0FF2121A1AD007B6791 /* VanillaConstraintsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VanillaConstraintsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C056F1042121A1AD007B6791 /* VanillaConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanillaConstraintsTests.swift; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				C056F1102121A243007B6791 /* Source */,
-				C056F0F92121A1AD007B6791 /* VanillaConstraints.h */,
 				C056F0FA2121A1AD007B6791 /* Info.plist */,
 			);
 			path = VanillaConstraints;
@@ -129,7 +126,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C056F1072121A1AD007B6791 /* VanillaConstraints.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
