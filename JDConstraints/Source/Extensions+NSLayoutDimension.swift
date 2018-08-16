@@ -12,15 +12,16 @@ import UIKit
 extension NSLayoutDimension {
     internal func constraint(
         to dimension: NSLayoutDimension,
-        relation: ConstraintRelation = .equal
+        multiplier: CGFloat,
+        relation: ConstraintRelation
         ) -> NSLayoutConstraint {
         switch relation {
         case .equal:
-            return constraint(equalTo: dimension)
+            return constraint(equalTo: dimension, multiplier: multiplier)
         case .equalOrLess:
-            return constraint(lessThanOrEqualTo: dimension)
+            return constraint(lessThanOrEqualTo: dimension, multiplier: multiplier)
         case .equalOrGreater:
-            return constraint(greaterThanOrEqualTo: dimension)
+            return constraint(greaterThanOrEqualTo: dimension, multiplier: multiplier)
         }
     }
 

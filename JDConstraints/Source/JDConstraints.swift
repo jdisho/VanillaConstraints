@@ -12,9 +12,9 @@ import UIKit
 extension Constrainable {
 
     @discardableResult
-    public func add(to parentView: UIView) -> Self {
-        childView.translatesAutoresizingMaskIntoConstraints = false
-        parentView.addSubview(childView)
+    public func add(to parent: UIView) -> Self {
+        target.translatesAutoresizingMaskIntoConstraints = false
+        parent.addSubview(target)
 
         return self
     }
@@ -22,12 +22,13 @@ extension Constrainable {
     @discardableResult
     public func top<YAxis>(
         to anchor: KeyPath<UIView, YAxis>,
+        of view: UIView? = nil,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
         ) -> Self where YAxis: NSLayoutYAxisAnchor {
-        childView.topAnchor
-            .constraint(to: parentView[keyPath: anchor], relation: relation)
+        target.topAnchor
+            .constraint(to: (view ?? parent)[keyPath: anchor], relation: relation)
             .offset(constant)
             .priority(priority)
             .activate()
@@ -38,12 +39,13 @@ extension Constrainable {
     @discardableResult
     public func bottom<YAxis>(
         to anchor: KeyPath<UIView, YAxis>,
+        of view: UIView? = nil,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
         ) -> Self where YAxis: NSLayoutYAxisAnchor {
-        childView.bottomAnchor
-            .constraint(to: parentView[keyPath: anchor], relation: relation)
+        target.bottomAnchor
+            .constraint(to: (view ?? parent)[keyPath: anchor], relation: relation)
             .offset(-constant)
             .priority(priority)
             .activate()
@@ -54,12 +56,13 @@ extension Constrainable {
     @discardableResult
     public func left<XAxis>(
         to anchor: KeyPath<UIView, XAxis>,
+        of view: UIView? = nil,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
         ) -> Self where XAxis: NSLayoutXAxisAnchor {
-        childView.leftAnchor
-            .constraint(to: parentView[keyPath: anchor], relation: relation)
+        target.leftAnchor
+            .constraint(to: (view ?? parent)[keyPath: anchor], relation: relation)
             .offset(constant)
             .priority(priority)
             .activate()
@@ -70,12 +73,13 @@ extension Constrainable {
     @discardableResult
     public func right<XAxis>(
         to anchor: KeyPath<UIView, XAxis>,
+        of view: UIView? = nil,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
         ) -> Self where XAxis: NSLayoutXAxisAnchor {
-        childView.rightAnchor
-            .constraint(to: parentView[keyPath: anchor], relation: relation)
+        target.rightAnchor
+            .constraint(to: (view ?? parent)[keyPath: anchor], relation: relation)
             .offset(-constant)
             .priority(priority)
             .activate()
@@ -86,12 +90,13 @@ extension Constrainable {
     @discardableResult
     public func leading<XAxis>(
         to anchor: KeyPath<UIView, XAxis>,
+        of view: UIView? = nil,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
         ) -> Self where XAxis: NSLayoutXAxisAnchor {
-        childView.leadingAnchor
-            .constraint(to: parentView[keyPath: anchor], relation: relation)
+        target.leadingAnchor
+            .constraint(to: (view ?? parent)[keyPath: anchor], relation: relation)
             .offset(constant)
             .priority(priority)
             .activate()
@@ -102,12 +107,13 @@ extension Constrainable {
     @discardableResult
     public func trailing<XAxis>(
         to anchor: KeyPath<UIView, XAxis>,
+        of view: UIView? = nil,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
         ) -> Self where XAxis: NSLayoutXAxisAnchor {
-        childView.trailingAnchor
-            .constraint(to: parentView[keyPath: anchor], relation: relation)
+        target.trailingAnchor
+            .constraint(to: (view ?? parent)[keyPath: anchor], relation: relation)
             .offset(-constant)
             .priority(priority)
             .activate()
@@ -115,16 +121,16 @@ extension Constrainable {
         return self
     }
 
-
     @discardableResult
     public func centerY<YAxis>(
         to anchor: KeyPath<UIView, YAxis>,
+        of view: UIView? = nil,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
         ) -> Self where YAxis: NSLayoutYAxisAnchor {
-        childView.centerYAnchor
-            .constraint(to: parentView[keyPath: anchor], relation: relation)
+        target.centerYAnchor
+            .constraint(to: (view ?? parent)[keyPath: anchor], relation: relation)
             .offset(constant)
             .priority(priority)
             .activate()
@@ -135,12 +141,13 @@ extension Constrainable {
     @discardableResult
     public func centerX<XAxis>(
         to anchor: KeyPath<UIView, XAxis>,
+        of view: UIView? = nil,
         relation: ConstraintRelation = .equal,
         constant: CGFloat = 0,
         priority: UILayoutPriority = .required
         ) -> Self where XAxis: NSLayoutXAxisAnchor {
-        childView.centerXAnchor
-            .constraint(to: parentView[keyPath: anchor], relation: relation)
+        target.centerXAnchor
+            .constraint(to: (view ?? parent)[keyPath: anchor], relation: relation)
             .offset(constant)
             .priority(priority)
             .activate()
@@ -151,12 +158,14 @@ extension Constrainable {
     @discardableResult
     public func height<YAxis>(
         to dimension: KeyPath<UIView, YAxis>,
-        relation: ConstraintRelation = .equal,
+        of view: UIView? = nil,
+        multiplier: CGFloat = 1,
         constant: CGFloat = 0,
+        relation: ConstraintRelation = .equal,
         priority: UILayoutPriority = .required
         ) -> Self where YAxis: NSLayoutDimension {
-        childView.heightAnchor
-            .constraint(to: parentView[keyPath: dimension], relation: relation)
+        target.heightAnchor
+            .constraint(to: (view ?? parent)[keyPath: dimension], multiplier: multiplier, relation: relation)
             .offset(constant)
             .priority(priority)
             .activate()
@@ -167,12 +176,14 @@ extension Constrainable {
     @discardableResult
     public func width<XAxis>(
         to dimension: KeyPath<UIView, XAxis>,
-        relation: ConstraintRelation = .equal,
+        of view: UIView? = nil,
+        multiplier: CGFloat = 1,
         constant: CGFloat = 0,
+        relation: ConstraintRelation = .equal,
         priority: UILayoutPriority = .required
         ) -> Self where XAxis: NSLayoutDimension {
-        childView.widthAnchor
-            .constraint(to: parentView[keyPath: dimension], relation: relation)
+        target.widthAnchor
+            .constraint(to: (view ?? parent)[keyPath: dimension], multiplier: multiplier, relation: relation)
             .offset(constant)
             .priority(priority)
             .activate()
@@ -186,7 +197,7 @@ extension Constrainable {
         relation: ConstraintRelation = .equal,
         priority: UILayoutPriority = .required
         ) -> Self {
-        childView.widthAnchor
+        target.widthAnchor
             .constraint(toConstant: constant)
             .priority(priority)
             .activate()
@@ -200,7 +211,7 @@ extension Constrainable {
         relation: ConstraintRelation = .equal,
         priority: UILayoutPriority = .required
         ) -> Self {
-        childView.heightAnchor
+        target.heightAnchor
             .constraint(toConstant: constant)
             .priority(priority)
             .activate()

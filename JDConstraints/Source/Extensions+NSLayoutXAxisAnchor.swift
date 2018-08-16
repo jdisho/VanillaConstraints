@@ -12,7 +12,7 @@ import UIKit
 extension NSLayoutXAxisAnchor {
     internal func constraint(
         to anchor: NSLayoutXAxisAnchor,
-        relation: ConstraintRelation = .equal
+        relation: ConstraintRelation
         ) -> NSLayoutConstraint {
         switch relation {
         case .equal:
