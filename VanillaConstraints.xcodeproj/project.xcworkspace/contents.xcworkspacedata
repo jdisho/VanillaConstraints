@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JDConstraints.xcodeproj">
+      location = "self:/Users/jodi/Documents/Swift/JDConstraints/VanillaConstraints.xcodeproj">
    </FileRef>
 </Workspace>

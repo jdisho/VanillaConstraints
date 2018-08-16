@@ -1,6 +1,6 @@
 //
-//  Extensions+NSLayoutXAxisAnchor.swift
-//  JDConstraints
+//  Extensions+NSLayoutYAxisAnchor.swift
+//  VanillaConstraints
 //
 //  Created by Joan Disho on 13.08.18.
 //  Copyright © 2018 Joan Disho. All rights reserved.
@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension NSLayoutXAxisAnchor {
+extension NSLayoutYAxisAnchor {
     internal func constraint(
-        to anchor: NSLayoutXAxisAnchor,
+        to anchor: NSLayoutYAxisAnchor,
         relation: ConstraintRelation
         ) -> NSLayoutConstraint {
         switch relation {

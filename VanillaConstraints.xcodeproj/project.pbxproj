@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C056F1002121A1AD007B6791 /* JDConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C056F0F62121A1AD007B6791 /* JDConstraints.framework */; };
-		C056F1052121A1AD007B6791 /* JDConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1042121A1AD007B6791 /* JDConstraintsTests.swift */; };
-		C056F1072121A1AD007B6791 /* JDConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = C056F0F92121A1AD007B6791 /* JDConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C03988602125AF5100FFDA7D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C056F0FA2121A1AD007B6791 /* Info.plist */; };
+		C056F1002121A1AD007B6791 /* VanillaConstraints.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C056F0F62121A1AD007B6791 /* VanillaConstraints.framework */; };
+		C056F1052121A1AD007B6791 /* VanillaConstraintsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1042121A1AD007B6791 /* VanillaConstraintsTests.swift */; };
+		C056F1072121A1AD007B6791 /* VanillaConstraints.h in Headers */ = {isa = PBXBuildFile; fileRef = C056F0F92121A1AD007B6791 /* VanillaConstraints.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C056F1122121A260007B6791 /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1112121A260007B6791 /* Constrainable.swift */; };
 		C056F1142121A337007B6791 /* UIView+Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1132121A337007B6791 /* UIView+Constrainable.swift */; };
 		C056F1182121A3D3007B6791 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1172121A3D3007B6791 /* ConstraintRelation.swift */; };
-		C056F11A2121A4B4007B6791 /* JDConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1192121A4B4007B6791 /* JDConstraints.swift */; };
+		C056F11A2121A4B4007B6791 /* VanillaConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1192121A4B4007B6791 /* VanillaConstraints.swift */; };
 		C056F11C2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F11B2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift */; };
 		C056F11F2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F11E2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift */; };
 		C056F1212121A553007B6791 /* Extensions+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1202121A553007B6791 /* Extensions+NSLayoutConstraint.swift */; };
 		C056F1232121A5B4007B6791 /* Extensions+NSLayoutDimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1222121A5B4007B6791 /* Extensions+NSLayoutDimension.swift */; };
-		C056F1262121A695007B6791 /* Extensions+JDConstrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1252121A695007B6791 /* Extensions+JDConstrainable.swift */; };
+		C056F1262121A695007B6791 /* Extensions+VanillaConstrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C056F1252121A695007B6791 /* Extensions+VanillaConstrainable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,21 +33,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C056F0F62121A1AD007B6791 /* JDConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JDConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C056F0F92121A1AD007B6791 /* JDConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDConstraints.h; sourceTree = "<group>"; };
-		C056F0FA2121A1AD007B6791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C056F0FF2121A1AD007B6791 /* JDConstraintsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JDConstraintsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C056F1042121A1AD007B6791 /* JDConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDConstraintsTests.swift; sourceTree = "<group>"; };
+		C056F0F62121A1AD007B6791 /* VanillaConstraints.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VanillaConstraints.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C056F0F92121A1AD007B6791 /* VanillaConstraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VanillaConstraints.h; sourceTree = "<group>"; };
+		C056F0FA2121A1AD007B6791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = /Users/jodi/Documents/Swift/JDConstraints/VanillaConstraints/Info.plist; sourceTree = "<absolute>"; };
+		C056F0FF2121A1AD007B6791 /* VanillaConstraintsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VanillaConstraintsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C056F1042121A1AD007B6791 /* VanillaConstraintsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanillaConstraintsTests.swift; sourceTree = "<group>"; };
 		C056F1062121A1AD007B6791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C056F1112121A260007B6791 /* Constrainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constrainable.swift; sourceTree = "<group>"; };
 		C056F1132121A337007B6791 /* UIView+Constrainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constrainable.swift"; sourceTree = "<group>"; };
 		C056F1172121A3D3007B6791 /* ConstraintRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
-		C056F1192121A4B4007B6791 /* JDConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JDConstraints.swift; sourceTree = "<group>"; };
+		C056F1192121A4B4007B6791 /* VanillaConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanillaConstraints.swift; sourceTree = "<group>"; };
 		C056F11B2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutXAxisAnchor.swift"; sourceTree = "<group>"; };
 		C056F11E2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutYAxisAnchor.swift"; sourceTree = "<group>"; };
 		C056F1202121A553007B6791 /* Extensions+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
 		C056F1222121A5B4007B6791 /* Extensions+NSLayoutDimension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+NSLayoutDimension.swift"; sourceTree = "<group>"; };
-		C056F1252121A695007B6791 /* Extensions+JDConstrainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+JDConstrainable.swift"; sourceTree = "<group>"; };
+		C056F1252121A695007B6791 /* Extensions+VanillaConstrainable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+VanillaConstrainable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C056F1002121A1AD007B6791 /* JDConstraints.framework in Frameworks */,
+				C056F1002121A1AD007B6791 /* VanillaConstraints.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +72,8 @@
 		C056F0EC2121A1AD007B6791 = {
 			isa = PBXGroup;
 			children = (
-				C056F0F82121A1AD007B6791 /* JDConstraints */,
-				C056F1032121A1AD007B6791 /* JDConstraintsTests */,
+				C056F0F82121A1AD007B6791 /* VanillaConstraints */,
+				C056F1032121A1AD007B6791 /* VanillaConstraintsTests */,
 				C056F0F72121A1AD007B6791 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,29 +81,29 @@
 		C056F0F72121A1AD007B6791 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C056F0F62121A1AD007B6791 /* JDConstraints.framework */,
-				C056F0FF2121A1AD007B6791 /* JDConstraintsTests.xctest */,
+				C056F0F62121A1AD007B6791 /* VanillaConstraints.framework */,
+				C056F0FF2121A1AD007B6791 /* VanillaConstraintsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C056F0F82121A1AD007B6791 /* JDConstraints */ = {
+		C056F0F82121A1AD007B6791 /* VanillaConstraints */ = {
 			isa = PBXGroup;
 			children = (
 				C056F1102121A243007B6791 /* Source */,
-				C056F0F92121A1AD007B6791 /* JDConstraints.h */,
+				C056F0F92121A1AD007B6791 /* VanillaConstraints.h */,
 				C056F0FA2121A1AD007B6791 /* Info.plist */,
 			);
-			path = JDConstraints;
+			path = VanillaConstraints;
 			sourceTree = "<group>";
 		};
-		C056F1032121A1AD007B6791 /* JDConstraintsTests */ = {
+		C056F1032121A1AD007B6791 /* VanillaConstraintsTests */ = {
 			isa = PBXGroup;
 			children = (
-				C056F1042121A1AD007B6791 /* JDConstraintsTests.swift */,
+				C056F1042121A1AD007B6791 /* VanillaConstraintsTests.swift */,
 				C056F1062121A1AD007B6791 /* Info.plist */,
 			);
-			path = JDConstraintsTests;
+			path = VanillaConstraintsTests;
 			sourceTree = "<group>";
 		};
 		C056F1102121A243007B6791 /* Source */ = {
@@ -111,12 +112,12 @@
 				C056F1112121A260007B6791 /* Constrainable.swift */,
 				C056F1172121A3D3007B6791 /* ConstraintRelation.swift */,
 				C056F1132121A337007B6791 /* UIView+Constrainable.swift */,
-				C056F1192121A4B4007B6791 /* JDConstraints.swift */,
+				C056F1192121A4B4007B6791 /* VanillaConstraints.swift */,
 				C056F11B2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift */,
 				C056F11E2121A52E007B6791 /* Extensions+NSLayoutYAxisAnchor.swift */,
 				C056F1202121A553007B6791 /* Extensions+NSLayoutConstraint.swift */,
 				C056F1222121A5B4007B6791 /* Extensions+NSLayoutDimension.swift */,
-				C056F1252121A695007B6791 /* Extensions+JDConstrainable.swift */,
+				C056F1252121A695007B6791 /* Extensions+VanillaConstrainable.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -128,16 +129,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C056F1072121A1AD007B6791 /* JDConstraints.h in Headers */,
+				C056F1072121A1AD007B6791 /* VanillaConstraints.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C056F0F52121A1AD007B6791 /* JDConstraints */ = {
+		C056F0F52121A1AD007B6791 /* VanillaConstraints */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C056F10A2121A1AD007B6791 /* Build configuration list for PBXNativeTarget "JDConstraints" */;
+			buildConfigurationList = C056F10A2121A1AD007B6791 /* Build configuration list for PBXNativeTarget "VanillaConstraints" */;
 			buildPhases = (
 				C056F0F12121A1AD007B6791 /* Sources */,
 				C056F0F22121A1AD007B6791 /* Frameworks */,
@@ -148,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = JDConstraints;
+			name = VanillaConstraints;
 			productName = JDConstraints;
-			productReference = C056F0F62121A1AD007B6791 /* JDConstraints.framework */;
+			productReference = C056F0F62121A1AD007B6791 /* VanillaConstraints.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C056F0FE2121A1AD007B6791 /* JDConstraintsTests */ = {
+		C056F0FE2121A1AD007B6791 /* VanillaConstraintsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C056F10D2121A1AD007B6791 /* Build configuration list for PBXNativeTarget "JDConstraintsTests" */;
+			buildConfigurationList = C056F10D2121A1AD007B6791 /* Build configuration list for PBXNativeTarget "VanillaConstraintsTests" */;
 			buildPhases = (
 				C056F0FB2121A1AD007B6791 /* Sources */,
 				C056F0FC2121A1AD007B6791 /* Frameworks */,
@@ -166,9 +167,9 @@
 			dependencies = (
 				C056F1022121A1AD007B6791 /* PBXTargetDependency */,
 			);
-			name = JDConstraintsTests;
+			name = VanillaConstraintsTests;
 			productName = JDConstraintsTests;
-			productReference = C056F0FF2121A1AD007B6791 /* JDConstraintsTests.xctest */;
+			productReference = C056F0FF2121A1AD007B6791 /* VanillaConstraintsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -190,7 +191,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C056F0F02121A1AD007B6791 /* Build configuration list for PBXProject "JDConstraints" */;
+			buildConfigurationList = C056F0F02121A1AD007B6791 /* Build configuration list for PBXProject "VanillaConstraints" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -202,8 +203,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C056F0F52121A1AD007B6791 /* JDConstraints */,
-				C056F0FE2121A1AD007B6791 /* JDConstraintsTests */,
+				C056F0F52121A1AD007B6791 /* VanillaConstraints */,
+				C056F0FE2121A1AD007B6791 /* VanillaConstraintsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -213,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03988602125AF5100FFDA7D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,9 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C056F11A2121A4B4007B6791 /* JDConstraints.swift in Sources */,
+				C056F11A2121A4B4007B6791 /* VanillaConstraints.swift in Sources */,
 				C056F1232121A5B4007B6791 /* Extensions+NSLayoutDimension.swift in Sources */,
-				C056F1262121A695007B6791 /* Extensions+JDConstrainable.swift in Sources */,
+				C056F1262121A695007B6791 /* Extensions+VanillaConstrainable.swift in Sources */,
 				C056F11C2121A4FA007B6791 /* Extensions+NSLayoutXAxisAnchor.swift in Sources */,
 				C056F1212121A553007B6791 /* Extensions+NSLayoutConstraint.swift in Sources */,
 				C056F1142121A337007B6791 /* UIView+Constrainable.swift in Sources */,
@@ -246,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C056F1052121A1AD007B6791 /* JDConstraintsTests.swift in Sources */,
+				C056F1052121A1AD007B6791 /* VanillaConstraintsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +257,7 @@
 /* Begin PBXTargetDependency section */
 		C056F1022121A1AD007B6791 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C056F0F52121A1AD007B6791 /* JDConstraints */;
+			target = C056F0F52121A1AD007B6791 /* VanillaConstraints */;
 			targetProxy = C056F1012121A1AD007B6791 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -392,14 +394,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JDConstraints/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VanillaConstraints/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = disho.JDConstraints;
+				PRODUCT_BUNDLE_IDENTIFIER = disho.VanillaConstraints;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -419,14 +421,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JDConstraints/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/VanillaConstraints/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = disho.JDConstraints;
+				PRODUCT_BUNDLE_IDENTIFIER = disho.VanillaConstraints;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -475,7 +477,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C056F0F02121A1AD007B6791 /* Build configuration list for PBXProject "JDConstraints" */ = {
+		C056F0F02121A1AD007B6791 /* Build configuration list for PBXProject "VanillaConstraints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C056F1082121A1AD007B6791 /* Debug */,
@@ -484,7 +486,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C056F10A2121A1AD007B6791 /* Build configuration list for PBXNativeTarget "JDConstraints" */ = {
+		C056F10A2121A1AD007B6791 /* Build configuration list for PBXNativeTarget "VanillaConstraints" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C056F10B2121A1AD007B6791 /* Debug */,
@@ -493,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C056F10D2121A1AD007B6791 /* Build configuration list for PBXNativeTarget "JDConstraintsTests" */ = {
+		C056F10D2121A1AD007B6791 /* Build configuration list for PBXNativeTarget "VanillaConstraintsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C056F10E2121A1AD007B6791 /* Debug */,
