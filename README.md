@@ -19,7 +19,7 @@
 
 ### CocoaPods
 
-To integrate TinyNetworking into your Xcode project using CocoaPods, specify it in your `Podfile`:
+To integrate VanillaConstraints into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
 pod 'VanillaConstraints'
@@ -65,7 +65,7 @@ bottom.isActive = true
 let leading = view.leadingAnchor.constraint(greaterThanOrEqualTo: anotherView.leadingAnchor, constant: 8.0)
 ```
 
-with this:
+with this 💁‍♂️:
 ```swift
 view.add(to: anotherView)
   .top(to: \.topAnchor, constant: 16.0, priority: .defaultLow)
@@ -73,6 +73,127 @@ view.add(to: anotherView)
   .bottom(to: \.bottomAnchor, constant: 16.0)
   .leading(to: \.leadingAnchor, relation: .equalOrGreater, constant: 8.0)
 ```
+
+*⚠️ If the anchor's view is not specified, it is constrained where it is added.*
+
+### Edges 🤲
+
+Pin a view to the edges of another view:
+
+```swift
+anotherView.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+NSLayoutConstraint.activate([
+    view.topAnchor.constraint(equalTo: anotherView.topAnchor),
+    view.leadingAnchor.constraint(equalTo: anotherView.leadingAnchor),
+    view.bottomAnchor.constraint(equalTo: anotherView.bottomAnchor),
+    view.trailingAnchor.constraint(equalTo: anotherView.trailingAnchor)
+])
+```
+
+with `VanillaConstraints`:
+
+```swift
+view.add(to: anotherView)
+  .pinToEdges()
+```
+
+or with equal margins:
+
+```swift
+view.add(to: anotherView)
+  .pinToEdges(withMargins: 16.0)
+```
+
+or pinned to some other view different from where it is added:
+
+```swift
+view.add(to: anotherView)
+  .pinToEdges(of: someOtherView)
+```
+
+or pinned to safeAreaLayoutGuide egdes:
+
+```swift
+view.add(to: anotherView)
+  .pinToEdges(safeConstrainable: true) // false by default
+```
+
+### Center 🖖
+
+Center a view to another view:
+
+```swift
+anotherView.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+NSLayoutConstraint.activate([
+    view.centerXAnchor.constraint(equalTo: anotherView.centerXAnchor)
+    view.centerYAnchor.constraint(equalTo: anotherView.centerYAnchor)
+])
+```
+
+with `VanillaConstraints`:
+
+```swift
+view.add(to: anotherView)
+  .center()
+```
+
+or centered in some other view different from where it is added:
+
+```swift
+view.add(to: anotherView)
+  .center(in: someOtherView)
+```
+
+### Size 👋
+
+Set the size of the view:
+
+```swift
+anotherView.addSubview(view)
+
+view.translatesAutoresizingMaskIntoConstraints = false
+
+NSLayoutConstraint.activate([
+    view.widthAnchor.constraint(equalToConstant: 50.0)
+    view.heightAnchor.constraint(equalToConstant: 50.0)
+])
+```
+
+with `VanillaConstraints`:
+
+```swift
+view.add(to: anotherView)
+  .size(CGSize(width: 50.0, height: 50))
+```
+
+or with other relations: 
+
+```swift
+view.add(to: anotherView)
+  .size(CGSize(width: 50.0, height: 50), relation: .equalOrLess) // .equal by default 
+```
+
+### Supported attributes 🚚
+
+- `top`
+- `bottom`
+- `left`
+- `right`
+- `leading`
+- `trailing`
+- `centerX`
+- `centerY`
+- `width`
+- `height`
+ 
+
+
 
 
 
