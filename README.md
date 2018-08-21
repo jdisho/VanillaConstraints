@@ -197,8 +197,7 @@ view.add(to: anotherView)
 ## 🐨 Author
 This tiny library is created with ❤️ by [Joan Disho](https://twitter.com/_disho)
 
-### 📃 License
-
+## 📃 License
 VanillaConstraints is released under an MIT license. See [License.md](https://github.com/jdisho/VanillaConstraints/blob/master/LICENSE) for more information.
 
 
