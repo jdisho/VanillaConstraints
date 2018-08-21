@@ -1,4 +1,6 @@
-# Vanilla Constraints
+<p align="center">
+  <img src="https://github.com/jdisho/VanillaConstraints/blob/master/Images/logo.png">
+</p>
 <p align="center">
   <a href="https://swift.org">
         <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" />
@@ -6,7 +8,7 @@
 </p>
 
 #
-**Vanilla Constraint** is a simplified and chainable *AutoLayout NSLayoutConstraints* for iOS written in Swift.
+**VanillaConstraints** is a simplified and chainable *AutoLayout NSLayoutConstraints* for iOS written in Swift.
 
 - A tiny wrapper around NSLayoutConstraints.
 - Short syntax for creating layout constraints.
