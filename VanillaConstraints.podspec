@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = 'https://github.com/jdisho/VanillaConstraints'
   spec.authors      = { 'Joan Disho' => 'dishojoan@gmail.com' }
   spec.summary      = 'Simplified and chainable AutoLayout NSLayoutConstraints for iOS.'
-  spec.source       = { :git => 'https://github.com/jdisho/VanillaConstraints', :tag => spec.version }
+  spec.source       = { :git => 'https://github.com/jdisho/VanillaConstraints.git', :tag => spec.version }
   spec.ios.deployment_target = '9.0'
   spec.source_files = 'VanillaConstraints/Source/*.swift'
   spec.framework  = 'Foundation'
