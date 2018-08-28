@@ -2,9 +2,23 @@
   <img src="https://github.com/jdisho/VanillaConstraints/blob/master/Images/logo.png">
 </p>
 <p align="center">
+  <a href="https://github.com/jdisho/VanillaConstraints">
+        <img src="https://img.shields.io/cocoapods/p/VanillaConstraints.svg?style=flat" />
+  </a>
   <a href="https://swift.org">
         <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" />
   </a>
+  <a href="https://cocoapods.org/pods/VanillaConstraints">
+        <img src="https://img.shields.io/cocoapods/v/VanillaConstraints.svg" />
+  </a>
+  <a href="">
+        <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" />
+  </a>
+  <a href="https://twitter.com/_disho">
+        <img src="https://img.shields.io/badge/twitter-@_disho-blue.svg?style=flat" alt="Twitter: @_disho" />
+  </a>
+
+ 
 </p>
 
 #
