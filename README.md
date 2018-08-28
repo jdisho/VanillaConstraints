@@ -32,11 +32,15 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
-### Carthage 
-*Comming Soon*
 
-### Swift Package Manager 
-*Comming Soon*
+### Carthage 
+`github "jdisho/VanillaContraints" ~> 1.0`
+
+Then, run the following command:
+
+```bash
+$ carthage update
+```
 
 ### Manually
 
