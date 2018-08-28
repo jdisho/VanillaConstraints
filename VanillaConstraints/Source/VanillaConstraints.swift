@@ -198,7 +198,7 @@ extension Constrainable {
         priority: UILayoutPriority = .required
         ) -> Self {
         target.widthAnchor
-            .constraint(toConstant: constant)
+            .constraint(toConstant: constant, relation: relation)
             .priority(priority)
             .activate()
 
@@ -212,7 +212,7 @@ extension Constrainable {
         priority: UILayoutPriority = .required
         ) -> Self {
         target.heightAnchor
-            .constraint(toConstant: constant)
+            .constraint(toConstant: constant, relation: relation)
             .priority(priority)
             .activate()
 
