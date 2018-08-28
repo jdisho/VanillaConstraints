@@ -34,7 +34,9 @@ $ pod install
 ```
 
 ### Carthage 
-`github "jdisho/VanillaContraints" ~> 1.0`
+```
+github "jdisho/VanillaContraints" ~> 1.0
+```
 
 Then, run the following command:
 
