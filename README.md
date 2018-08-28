@@ -10,12 +10,12 @@
 #
 **VanillaConstraints** is a simplified and chainable *AutoLayout NSLayoutConstraints* for iOS written in Swift.
 
-- A tiny wrapper around NSLayoutConstraints.
-- Short syntax for creating layout constraints.
-- Chainable way of describing NSLayoutConstraints.
-- Constraints are active by default.
-- No need to set `translatesAutoresizingMaskIntoConstraints = false`
-- No external dependencies.
+- 🌯 A tiny wrapper around NSLayoutConstraints.
+- 🍬 Short syntax for creating layout constraints.
+- ⛓ Chainable way of describing NSLayoutConstraints.
+- ✅ Constraints are active by default.
+- 🧘‍♂️No need to set `translatesAutoresizingMaskIntoConstraints = false`.
+- 🤙 No external dependencies.
 
 ## 🛠 Installation
 
@@ -40,7 +40,7 @@ $ pod install
 
 ### Manually
 
-If you prefer not to use any of the dependency managers, you can integrate VanillaConstraints into your project manually, by downloading the source code and placing the files on your project directory.
+If you prefer not to use any of the dependency managers, you can integrate `VanillaConstraints` into your project manually, by downloading the source code and placing the files on your project directory.
 
 ## 👨🏻‍💻 Usage
 **tl;dr**
