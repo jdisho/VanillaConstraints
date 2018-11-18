@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 extension NSLayoutConstraint {
+
     internal func priority(_ priority: UILayoutPriority) -> Self {
         self.priority = priority
         return self
