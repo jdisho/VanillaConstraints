@@ -12,17 +12,41 @@ import UIKit
 extension Constrainable {
 
     @discardableResult
+    public func addWidth(
+        _ constant: CGFloat,
+        relation: ConstraintRelation = .equal,
+        priority: UILayoutPriority = .required
+        ) -> NSLayoutConstraint {
+        return target.widthAnchor
+            .constraint(toConstant: constant, relation: relation)
+            .priority(priority)
+            .activate()
+    }
+
+    @discardableResult
     public func width(
         _ constant: CGFloat,
         relation: ConstraintRelation = .equal,
         priority: UILayoutPriority = .required
         ) -> Self {
-        target.widthAnchor
-            .constraint(toConstant: constant, relation: relation)
+        addWidth(constant, relation: relation, priority: priority)
+        return self
+    }
+
+    @discardableResult
+    public func addWidth<XAxis>(
+        to dimension: KeyPath<UIView, XAxis>,
+        of view: UIView? = nil,
+        multiplier: CGFloat = 1,
+        constant: CGFloat = 0,
+        relation: ConstraintRelation = .equal,
+        priority: UILayoutPriority = .required
+        ) -> NSLayoutConstraint where XAxis: NSLayoutDimension {
+        return target.widthAnchor
+            .constraint(to: (view ?? parent)[keyPath: dimension], multiplier: multiplier, relation: relation)
+            .offset(constant)
             .priority(priority)
             .activate()
-
-        return self
     }
 
     @discardableResult
@@ -34,13 +58,20 @@ extension Constrainable {
         relation: ConstraintRelation = .equal,
         priority: UILayoutPriority = .required
         ) -> Self where XAxis: NSLayoutDimension {
-        target.widthAnchor
-            .constraint(to: (view ?? parent)[keyPath: dimension], multiplier: multiplier, relation: relation)
-            .offset(constant)
+        addWidth(to: dimension, of: view, multiplier: multiplier, constant: constant, relation: relation, priority: priority)
+        return self
+    }
+
+    @discardableResult
+    public func addHeight(
+        _ constant: CGFloat,
+        relation: ConstraintRelation = .equal,
+        priority: UILayoutPriority = .required
+        ) -> NSLayoutConstraint {
+        return target.heightAnchor
+            .constraint(toConstant: constant, relation: relation)
             .priority(priority)
             .activate()
-
-        return self
     }
 
     @discardableResult
@@ -49,12 +80,24 @@ extension Constrainable {
         relation: ConstraintRelation = .equal,
         priority: UILayoutPriority = .required
         ) -> Self {
-        target.heightAnchor
-            .constraint(toConstant: constant, relation: relation)
+        addHeight(constant, relation: relation, priority: priority)
+        return self
+    }
+
+    @discardableResult
+    public func addHeight<YAxis>(
+        to dimension: KeyPath<UIView, YAxis>,
+        of view: UIView? = nil,
+        multiplier: CGFloat = 1,
+        constant: CGFloat = 0,
+        relation: ConstraintRelation = .equal,
+        priority: UILayoutPriority = .required
+        ) -> NSLayoutConstraint where YAxis: NSLayoutDimension {
+        return target.heightAnchor
+            .constraint(to: (view ?? parent)[keyPath: dimension], multiplier: multiplier, relation: relation)
+            .offset(constant)
             .priority(priority)
             .activate()
-
-        return self
     }
 
     @discardableResult
@@ -66,12 +109,7 @@ extension Constrainable {
         relation: ConstraintRelation = .equal,
         priority: UILayoutPriority = .required
         ) -> Self where YAxis: NSLayoutDimension {
-        target.heightAnchor
-            .constraint(to: (view ?? parent)[keyPath: dimension], multiplier: multiplier, relation: relation)
-            .offset(constant)
-            .priority(priority)
-            .activate()
-
+        addHeight(to: dimension, of: view, multiplier: multiplier, constant: constant, relation: relation, priority: priority)
         return self
     }
 }
