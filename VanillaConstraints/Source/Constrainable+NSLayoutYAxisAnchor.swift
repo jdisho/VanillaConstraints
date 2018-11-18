@@ -23,7 +23,6 @@ extension Constrainable {
             .constraint(to: (view ?? parent)[keyPath: anchor], relation: relation)
             .offset(constant)
             .priority(priority)
-            .activate()
 
         return self
     }

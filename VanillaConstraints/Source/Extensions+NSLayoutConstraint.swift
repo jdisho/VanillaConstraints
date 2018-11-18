@@ -21,11 +21,13 @@ extension NSLayoutConstraint {
         return self
     }
 
-    internal func activate() {
+    internal func activate() -> Self {
         isActive = true
+        return self
     }
 
-    internal func deactivate() {
+    internal func deactivate() -> Self {
         isActive = false
+        return self
     }
 }
