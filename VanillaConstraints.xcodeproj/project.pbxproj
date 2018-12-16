@@ -450,7 +450,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YLLL7FKAFL;
-				INFOPLIST_FILE = JDConstraintsTests/Info.plist;
+				INFOPLIST_FILE = VanillaConstraintsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,7 +469,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YLLL7FKAFL;
-				INFOPLIST_FILE = JDConstraintsTests/Info.plist;
+				INFOPLIST_FILE = VanillaConstraintsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
