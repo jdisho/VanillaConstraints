@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import JDConstraints
+@testable import VanillaConstraints
 
 class JDConstraintsTests: XCTestCase {
     

@@ -12,18 +12,25 @@ import UIKit
 extension Constrainable {
 
     @discardableResult
-    public func pinToEdges(of view: UIView? = nil, withMargin margin: CGFloat = 0, safeConstrainable constrainable: Bool = false) -> Self {
+    public func pinToEdges(of view: UIView? = nil, withInsets insets: UIEdgeInsets, safeConstrainable constrainable: Bool = false) -> Self {
         if #available(iOS 11.0, *), constrainable {
-            return top(to: \.safeAreaLayoutGuide.topAnchor, of: view, constant: margin)
-                .right(to: \.safeAreaLayoutGuide.rightAnchor, of: view, constant: margin)
-                .bottom(to: \.safeAreaLayoutGuide.bottomAnchor, of: view, constant: margin)
-                .left(to: \.safeAreaLayoutGuide.leftAnchor, of: view, constant: margin)
+            return top(to: \.safeAreaLayoutGuide.topAnchor, of: view, constant: insets.top)
+                .right(to: \.safeAreaLayoutGuide.rightAnchor, of: view, constant: insets.right)
+                .bottom(to: \.safeAreaLayoutGuide.bottomAnchor, of: view, constant: insets.bottom)
+                .left(to: \.safeAreaLayoutGuide.leftAnchor, of: view, constant: insets.left)
         }
-
-        return top(to: \.topAnchor, of: view, constant: margin)
-            .right(to: \.rightAnchor, of: view, constant: margin)
-            .bottom(to: \.bottomAnchor, of: view, constant: margin)
-            .left(to: \.leftAnchor, of: view, constant: margin)
+        
+        return top(to: \.topAnchor, of: view, constant: insets.top)
+            .right(to: \.rightAnchor, of: view, constant: insets.right)
+            .bottom(to: \.bottomAnchor, of: view, constant: insets.bottom)
+            .left(to: \.leftAnchor, of: view, constant: insets.left)
+        
+    }
+    
+    @discardableResult
+    public func pinToEdges(of view: UIView? = nil, withMargin margin: CGFloat = 0, safeConstrainable constrainable: Bool = false) -> Self {
+        let insets = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
+        return pinToEdges(of: view, withInsets: insets, safeConstrainable: constrainable)
 
     }
 
