@@ -24,9 +24,10 @@
 #
 **VanillaConstraints** is a simplified and chainable *AutoLayout NSLayoutConstraints* for iOS written in Swift.
 
-- 🌯 A tiny wrapper around NSLayoutConstraints.
+- 🌯 A thin wrapper around `NSLayoutConstraints`.
 - 🍬 Short syntax for creating layout constraints.
-- ⛓ Chainable way of describing NSLayoutConstraints.
+- ⛓ Chainable way of describing `NSLayoutConstraint`s.
+- 🔥 Using `KeyPaths`.
 - ✅ Constraints are active by default.
 - 🧘‍♂️No need to set `translatesAutoresizingMaskIntoConstraints = false`.
 - 🤙 No external dependencies.
@@ -85,18 +86,19 @@ bottom.priority = .required
 bottom.isActive = true
 
 let leading = view.leadingAnchor.constraint(greaterThanOrEqualTo: anotherView.leadingAnchor, constant: 8.0)
+leading.isActive = true
 ```
 
 with this 💁‍♂️:
 ```swift
 view.add(to: anotherView)
   .top(to: \.topAnchor, constant: 16.0, priority: .defaultLow)
-  .trailing(to: \.trailingAnchor, relation: .equalOrLess, priority: defaultHigh)
+  .trailing(to: \.trailingAnchor, relation: .equalOrLess, priority: .defaultHigh)
   .bottom(to: \.bottomAnchor, constant: 16.0)
   .leading(to: \.leadingAnchor, relation: .equalOrGreater, constant: 8.0)
 ```
 
-*⚠️ If the anchor's view is not specified, it is constrained where it is added.*
+**⚠️ If the anchor's view is not specified, it is constrained where it is added.**
 
 ### Edges 🤲
 
@@ -118,29 +120,25 @@ NSLayoutConstraint.activate([
 with `VanillaConstraints`:
 
 ```swift
-view.add(to: anotherView)
-  .pinToEdges()
+view.add(to: anotherView).pinToEdges()
 ```
 
 or with equal margins:
 
 ```swift
-view.add(to: anotherView)
-  .pinToEdges(withMargins: 16.0)
+view.add(to: anotherView).pinToEdges(withMargins: 16.0)
 ```
 
 or pinned to some other view different from where it is added:
 
 ```swift
-view.add(to: anotherView)
-  .pinToEdges(of: someOtherView)
+view.add(to: anotherView).pinToEdges(of: someOtherView)
 ```
 
 or pinned to safeAreaLayoutGuide egdes:
 
 ```swift
-view.add(to: anotherView)
-  .pinToEdges(safeConstrainable: true) // false by default
+view.add(to: anotherView).pinToEdges(safeConstrainable: true) // false by default
 ```
 
 ### Center 🖖
@@ -161,15 +159,13 @@ NSLayoutConstraint.activate([
 with `VanillaConstraints`:
 
 ```swift
-view.add(to: anotherView)
-  .center()
+view.add(to: anotherView).center()
 ```
 
 or centered in some other view different from where it is added:
 
 ```swift
-view.add(to: anotherView)
-  .center(in: someOtherView)
+view.add(to: anotherView).center(in: someOtherView)
 ```
 
 ### Size 👋
@@ -190,15 +186,13 @@ NSLayoutConstraint.activate([
 with `VanillaConstraints`:
 
 ```swift
-view.add(to: anotherView)
-  .size(CGSize(width: 50.0, height: 50))
+view.add(to: anotherView).size(CGSize(width: 50.0, height: 50))
 ```
 
 or with other relations: 
 
 ```swift
-view.add(to: anotherView)
-  .size(CGSize(width: 50.0, height: 50), relation: .equalOrLess) // .equal by default 
+view.add(to: anotherView).size(CGSize(width: 50.0, height: 50), relation: .equalOrLess) // .equal by default 
 ```
 
 ### Supported attributes 🚚
