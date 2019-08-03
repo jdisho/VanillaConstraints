@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'VanillaConstraints'
-  spec.version      = '1.0.1'
+  spec.version      = '1.0.4'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://github.com/jdisho/VanillaConstraints'
   spec.authors      = { 'Joan Disho' => 'dishojoan@gmail.com' }
