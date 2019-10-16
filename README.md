@@ -1,12 +1,10 @@
-<p align="center">
-  <img src="https://github.com/jdisho/VanillaConstraints/blob/master/Images/logo.png">
-</p>
-<p align="center">
+# 🍦 VanillaConstraints
+<p align="left">
   <a href="https://github.com/jdisho/VanillaConstraints">
         <img src="https://img.shields.io/cocoapods/p/VanillaConstraints.svg?style=flat" />
   </a>
   <a href="https://swift.org">
-        <img src="https://img.shields.io/badge/Swift-4.0-orange.svg" />
+        <img src="https://img.shields.io/badge/Swift-5.0-orange.svg" />
   </a>
   <a href="https://cocoapods.org/pods/VanillaConstraints">
         <img src="https://img.shields.io/cocoapods/v/VanillaConstraints.svg" />
@@ -17,20 +15,17 @@
   <a href="https://twitter.com/_disho">
         <img src="https://img.shields.io/badge/twitter-@_disho-blue.svg?style=flat" alt="Twitter: @_disho" />
   </a>
-
  
 </p>
 
-#
-**VanillaConstraints** is a simplified and chainable *AutoLayout NSLayoutConstraints* for iOS written in Swift.
-
-- 🌯 A thin wrapper around `NSLayoutConstraints`.
-- 🍬 Short syntax for creating layout constraints.
-- ⛓ Chainable way of describing `NSLayoutConstraint`s.
-- 🔥 Using `KeyPaths`.
-- ✅ Constraints are active by default.
-- 🧘‍♂️No need to set `translatesAutoresizingMaskIntoConstraints = false`.
-- 🤙 No external dependencies.
+- A simplified and chainable *AutoLayout* for iOS written in Swift.
+- A thin wrapper around `NSLayoutConstraints`.
+- Short syntax for creating layout constraints.
+- Chainable way of describing `NSLayoutConstraint`s.
+- Using `KeyPaths`.
+- Constraints are active by default.
+- No need to set `translatesAutoresizingMaskIntoConstraints = false`.
+- No external dependencies.
 
 ## 🛠 Installation
 
@@ -89,7 +84,7 @@ let leading = view.leadingAnchor.constraint(greaterThanOrEqualTo: anotherView.le
 leading.isActive = true
 ```
 
-with this 💁‍♂️:
+with this:
 ```swift
 view.add(to: anotherView)
   .top(to: \.topAnchor, constant: 16.0, priority: .defaultLow)
@@ -100,7 +95,7 @@ view.add(to: anotherView)
 
 **⚠️ If the anchor's view is not specified, it is constrained where it is added.**
 
-### Edges 🤲
+### Edges
 
 Pin a view to the edges of another view:
 
@@ -141,7 +136,7 @@ or pinned to safeAreaLayoutGuide egdes:
 view.add(to: anotherView).pinToEdges(safeConstrainable: true) // false by default
 ```
 
-### Center 🖖
+### Center
 
 Center a view to another view:
 
@@ -168,7 +163,7 @@ or centered in some other view different from where it is added:
 view.add(to: anotherView).center(in: someOtherView)
 ```
 
-### Size 👋
+### Size
 
 Set the size of the view:
 
@@ -195,7 +190,7 @@ or with other relations:
 view.add(to: anotherView).size(CGSize(width: 50.0, height: 50), relation: .equalOrLess) // .equal by default 
 ```
 
-### Supported attributes 🚚
+### Supported attributes
 
 - `top`
 - `bottom`
@@ -208,7 +203,7 @@ view.add(to: anotherView).size(CGSize(width: 50.0, height: 50), relation: .equal
 - `width`
 - `height`
  
-## 🐨 Author
+## 👤 Author
 This tiny library is created with ❤️ by [Joan Disho](https://twitter.com/_disho)
 
 ## 📃 License
