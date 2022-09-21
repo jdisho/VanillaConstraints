@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public protocol Constrainable: class {
+public protocol Constrainable: AnyObject {
     var parent: UIView { get }
     var target: UIView { get }
 }
