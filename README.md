@@ -59,7 +59,7 @@ $ carthage update
 Add the following dependency to your **Package.swift** file:
 
 ```swift
-.package(url: "https://github.com/jdisho/VanillaConstraints", from: "1.0.4")
+.package(url: "https://github.com/gugell/VanillaConstraints", from: "1.0.4")
 ```
 
 ### Manually
