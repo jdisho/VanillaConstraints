@@ -54,6 +54,14 @@ Then, run the following command:
 $ carthage update
 ```
 
+### Swift Package Manager
+
+Add the following dependency to your **Package.swift** file:
+
+```swift
+.package(url: "https://github.com/gugell/VanillaConstraints", from: "1.0.4")
+```
+
 ### Manually
 
 If you prefer not to use any of the dependency managers, you can integrate `VanillaConstraints` into your project manually, by downloading the source code and placing the files on your project directory.
